@@ -1,3 +1,6 @@
 # Cupcake Counter
-A simple platform game developed in Greenfoot IDE. The source code from "Creative Greenfood" book.
-The code was updated for new Greenfoot API 3.6.1.
+A simple platform game developed in Greenfoot IDE. 
+The source code taken from "Creative Greenfood" book.
+I've update the code to run on new Greenfoot 3.
+
+![Screenshot from the game](screenshot.png)
