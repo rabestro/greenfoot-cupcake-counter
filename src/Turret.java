@@ -1,5 +1,6 @@
 import greenfoot.*; 
 
+
 public class Turret extends Actor {
 	private GreenfootImage turret;
 	private GreenfootImage gun;
@@ -21,4 +22,7 @@ public class Turret extends Actor {
 
 		setImage(img);
 	}
+
+    public void act() {
+    }    
 }

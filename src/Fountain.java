@@ -1,5 +1,6 @@
 import greenfoot.*;
 
+
 public class Fountain extends Actor {
     private int lifespan = 75;
     private int startDelay = 100;
@@ -23,5 +24,14 @@ public class Fountain extends Actor {
     }
     
     private void createRedBallShower() {
+        lifespan--;
+        if( lifespan < 0) {
+            getWorld().removeObject(this);
+        } else {
+            int tr = Greenfoot.getRandomNumber(30) - 15;
+            int s = Greenfoot.getRandomNumber(4) + 6;
+            int l = Greenfoot.getRandomNumber(15) + 5;
+            getWorld().addObject(new RedBall(tr, s, l, 10, 10), getX(), getY());
+        }
     }
 }

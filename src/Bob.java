@@ -17,6 +17,7 @@ public class Bob extends Jumper {
     private int actorWidth;
 
     private static final int DELAY = 3;
+    private static final int SIDEHIT = 10;
 
     public Bob() {
         super();

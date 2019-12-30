@@ -27,8 +27,11 @@ public class CupcakeWorld extends World {
         if( level % 3 == 0 ) {
             FCOUNT--;
             BCOUNT--;
+            fountainCounter = Math.max(fountainCounter-50, 0);
+            ballCounter = Math.max(ballCounter-50, 0);
             level++;
         }
+        if( level < score.getValue()) ++level;	
     }
 
     private void generateFountains() {
